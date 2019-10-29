@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ManualEntryFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.18" />
+
+    <TextView
+            android:id="@+id/manualEntryForTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito"
+            android:text="@string/manual_entry_for"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+            android:id="@+id/manualEntryInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/enter_card_manually"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/manualEntryForTextView" />
+
+    <Button
+            android:id="@+id/runManualTransactionButton"
+            style="@style/Button"
+            android:layout_marginBottom="24dp"
+            android:enabled="false"
+            android:text="@string/run_transaction"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+            android:id="@+id/cardNumberLabel"
+            style="@style/ManualEntryLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_above_edit_text"
+            android:text="@string/card_number"
+            app:layout_constraintBottom_toTopOf="@+id/cardNumberEditText"
+            app:layout_constraintStart_toStartOf="@+id/cardNumberEditText" />
+
+    <EditText
+            android:id="@+id/cardNumberEditText"
+            style="@style/ManualEntryEditText"
+            android:layout_width="@dimen/card_edit_text_width"
+            android:layout_height="@dimen/manual_entry_edit_text_height"
+            android:layout_marginTop="80dp"
+            android:digits="1234567890 "
+            android:ems="10"
+            android:hint="@string/card_number_hint"
+            android:imeOptions="actionNext"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/manualEntryInfoTextView" />
+
+    <TextView
+            android:id="@+id/expDateLabel"
+            style="@style/ManualEntryLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_above_edit_text"
+            android:text="@string/expiration_date"
+            app:layout_constraintBottom_toTopOf="@+id/expDateEditText"
+            app:layout_constraintStart_toStartOf="@+id/expDateEditText" />
+
+    <EditText
+            android:id="@+id/expDateEditText"
+            style="@style/ManualEntryEditText"
+            android:layout_width="@dimen/small_edit_text_width"
+            android:layout_height="@dimen/manual_entry_edit_text_height"
+            android:layout_marginTop="@dimen/distance_below_card_edit_text"
+            android:ems="10"
+            android:hint="@string/exp_date_hint"
+            android:imeOptions="actionNext"
+            android:inputType="date"
+            app:layout_constraintStart_toStartOf="@+id/cardNumberEditText"
+            app:layout_constraintTop_toBottomOf="@+id/cardNumberEditText" />
+
+    <TextView
+            android:id="@+id/securityCodeLabel"
+            style="@style/ManualEntryLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_above_edit_text"
+            android:text="@string/security_code"
+            app:layout_constraintBottom_toTopOf="@+id/securityCodeEditText"
+            app:layout_constraintStart_toStartOf="@+id/securityCodeEditText" />
+
+    <EditText
+            android:id="@+id/securityCodeEditText"
+            style="@style/ManualEntryEditText"
+            android:layout_width="@dimen/small_edit_text_width"
+            android:layout_height="@dimen/manual_entry_edit_text_height"
+            android:layout_marginTop="@dimen/distance_below_card_edit_text"
+            android:ems="10"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="@+id/cardNumberEditText"
+            app:layout_constraintTop_toBottomOf="@+id/cardNumberEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

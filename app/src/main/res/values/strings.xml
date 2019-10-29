@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">PayBridge</string>
+    <string name="run_transaction">Run Mobile Transaction</string>
+    <string name="connect">Connect</string>
+    <string name="powered_by_clearent">powered by clearent</string>
+    <string name="trouble_connecting">Having trouble connecting?</string>
+    <string name="go_to_manual"><u>Click here to enter manually.</u></string>
+    <string name="amount">AMOUNT</string>
+    <string name="image_of_a_receipt">image of a receipt</string>
+    <string name="sales_tax">SALES TAX</string>
+    <string name="tip_amount">TIP AMOUNT</string>
+    <string name="total">TOTAL</string>
+    <string name="initialValue">$0.00</string>
+
+    <string name="connect_now">Connect Now</string>
+    <string name="connected">Connected</string>
+    <string name="phone_card_reader_description">phone with card reader attached</string>
+    <string name="cancel_transaction">Cancel Transaction</string>
+    <string name="insert_or_swipe">Insert or swipe your&lt;br>card for &lt;b>$%s&lt;/b>.</string>
+    <string name="remove_card">Remove Card</string>
+    <string name="processing">Processing</string>
+
+    <string name="success_description">a check mark with a circle around it</string>
+    <string name="perfect">Perfect!</string>
+    <string name="success_result">Your transaction was a success!\nYou\'ve been charged for $%s.</string>
+    <string name="duplicate">Duplicate</string>
+    <string name="transaction_previously_approved_for">Transaction was previously approved\nfor amount of $%s.\n\nIt was not charged again.</string>
+    <string name="finish_and_return">Finish and Return</string>
+    <string name="oops">Oops!</string>
+    <string name="failure_result">Your transaction was unsuccessful.\nGo back and try again</string>
+    <string name="fail_description">A green X with a white circle around it</string>
+    <string name="disconnected_description">white circle with red x inside</string>
+    <string name="enter_manually"><u>or enter manually here.</u></string>
+    <string name="try_again">Try Again</string>
+    <string name="cancel">Cancel</string>
+    <string name="bluetooth_description">bluetooth symbol inside a circle</string>
+    <string name="select_device">Select IDTech Device\nto connect to:</string>
+    <string name="trying_to_connect">Trying to Connect</string>
+
+    <string name="manual_entry_for">Manual Entry for &lt;b>$%s&lt;/b>.</string>
+    <string name="enter_card_manually">Enter your card info manually here.</string>
+    <string name="card_number_hint">1234 5678 9012 3456</string>
+    <string name="exp_date_hint">MM/YY</string>
+    <string name="card_number">Card Number</string>
+    <string name="expiration_date">Expiration Date</string>
+    <string name="security_code">Security Code</string>
+    <string name="swipe_card">Chip Read Error\nPlease Swipe Card</string>
+    <string name="insert_chip">Please Insert Chip\nand Press Run Button</string>
+    <string name="return_to_transaction">Return To Transaction</string>
+    <string name="about_paybridge">About PayBridge</string>
+    <string name="version_number">Version: %s</string>
+    <string name="info_button_description">the letter i with a circle around it</string>
+</resources>

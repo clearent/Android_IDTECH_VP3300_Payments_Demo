@@ -1,0 +1,49 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+
+#Java
+target/
+
+#IntelliJ
+.idea
+*.iml
+
+### Java ###
+.class
+
+# Package Files #
+.jar
+.war
+.ear
+
+### Eclipse ###
+.pydevproject
+.metadata
+.gradle
+bin
+tmp
+.tmp
+.bak
+.swp
+~.nib
+.settings
+.loadpath
+.classpath
+.project
+.factorypath
+
+# Logging
+*.log
+/.apt_generated/
